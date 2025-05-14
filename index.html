@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projeto Agrinho - Conexão Campo-Cidade</title>
+  <link href="c" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url("lk.png") no-repeat center center/cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      margin: 10px 0 20px;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      background: #8fcf3c;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #75aa2c;
+    }
+
+    .navbar {
+      background: #d0e6a5;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .navbar ul {
+      list-style: none;
+    }
+
+    .navbar li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    .navbar a {
+      color: #2e5e1f;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .bg-light {
+      background: #e9f5df;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #2e5e1f;
+    }
+
+    .objetivos li {
+      margin-bottom: 10px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .formulario input,
+    .formulario textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .formulario button {
+      padding: 10px;
+      background: #8fcf3c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #8fcf3c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Festejando Conexão Campo-Cidade</h1>
+      <p>Um projeto que une culturas, saberes e comunidades</p>
+      <a href="#sobre" class="btn">Conheça o Projeto</a>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#objetivos">Objetivos</a></li>
+      <li><a href="#atividades">Atividades</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section id="sobre" class="section">
+    <h2>Sobre o Projeto</h2>
+    <p>O projeto Agrinho 2025 visa fortalecer os laços entre o campo e a cidade, destacando sua interdependência por meio de ações educativas, culturais e ambientais, promovendo o respeito e a valorização de ambas as realidades.</p>
+  </section>
+
+  <section id="objetivos" class="section bg-light">
+    <h2>Objetivos</h2>
+    <ul class="objetivos">
+      <li>Promover a integração entre culturas rurais e urbanas.</li>
+      <li>Valorizar saberes tradicionais e inovações tecnológicas.</li>
+      <li>Fomentar o consumo consciente e a sustentabilidade.</li>
+    </ul>
+  </section>
+
+  <section id="atividades" class="section">
+    <h2>Atividades Desenvolvidas</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Feira Campo & Cidade</h3>
+        <p>Exposição de alimentos, artesanatos e produtos da agricultura familiar.</p>
+      </div>
+      <div class="card">
+        <h3>Oficinas Sustentáveis</h3>
+        <p>Compostagem, culinária saudável e técnicas de plantio urbano.</p>
+      </div>
+      <div class="card">
+        <h3>Apresentações Culturais</h3>
+        <p>Teatro, música e poesia com temas do campo e da cidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="section bg-light">
+    <h2>Galeria de Imagens</h2>
+    <div class="galeria">
+      <img src="a.png" alt="Feira do Campo">
+      <img src="w.png" alt="Oficina Sustentável">
+      <img src="kw.png" alt="Apresentação Cultural">
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <h2>Fale Conosco</h2>
+    <form class="formulario">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Mensagem" rows="5"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Projeto Agrinho | Desenvolvido por Escola Rural Modelo</p>
+  </footer>
+
+</body>
+</html>
